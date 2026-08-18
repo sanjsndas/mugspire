@@ -1,0 +1,1852 @@
+ 
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mugspireauty — Coffee and tea delivery to your home or office – your favorite flavors are close at hand</title>
+    <meta property="og:title" content="Mugspireauty — Coffee and tea delivery to your home or office – your favorite flavors are close at hand" />
+    <meta property="og:image" content="uploads/04-08-2026/coffee-2026-08-10-2.jpg" />
+    
+    <meta property="og:description" content="Sometimes all it takes to have a great day is a little something— a cup of aromatic coffee or freshly brewed tea . That same taste..." />
+    <meta name="description" content="Sometimes all it takes to have a great day is a little something— a cup of aromatic coffee or freshly brewed tea . That same taste..." />
+     
+    
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet" />
+    <style>
+
+      body{
+      	direction: ltr;
+      	font-family: 'Changa', sans-serif !important;
+      	font-size:  18px;
+      	margin: 0;
+      	padding: 0px;
+      	line-height: 1.5;
+        overflow: auto;
+      }
+
+         html {
+      	scroll-behavior: smooth;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      p{
+      	padding: 0;
+      	margin: 0;
+      }
+
+      p, li{
+        padding: 4px 0;
+        line-height: 1.5;
+      }
+
+      a{
+      	text-decoration: none;
+      	color: inherit;
+      	cursor: pointer;
+      }
+
+      img{
+      	display: block;
+      	max-width: 100%;
+      	max-height: 100%;
+      }
+
+      ul{
+      	margin: 0;
+      	padding: 0;
+      }
+
+      .content-block{
+        width: auto;
+        padding-right: 17px;
+        padding-left: 17px;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+      }
+
+      @media screen and (min-width: 480px) {
+        .content-block{
+        max-width: 450px;
+        }
+      }
+      @media screen and (min-width: 575px){
+        .content-block{
+          max-width: 540px;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .content-block{
+        max-width: 730px;
+        }
+      }
+      @media screen and (min-width: 992px) {
+        .content-block{
+          max-width: 960px;
+        }
+      }
+
+      @media screen and (min-width: 1200px){
+        .content-block{
+          max-width: 1170px;
+          }
+      }
+
+      @media (min-width: 1400px){
+        .content-block{
+          max-width: 1274px;
+        }
+      }
+
+      .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #00000050;
+        z-index: 1;
+        padding: 13px 0;
+      }
+
+      .menu-btn {
+        cursor: pointer;
+        display: block;
+        border: 2px solid #fff;
+        padding: 0 4px;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        z-index:100;
+        overflow: hidden;
+      }
+
+      .menu-btn span {
+        width: 20px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        transition: all 0.5s;
+      }
+
+      .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 7px);
+      }
+      .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 7px);
+      }
+
+      .menu-toggle {
+        display: none;
+      }
+
+      .menu-toggle:checked ~ .menu-btn span:nth-of-type(1) {
+        display: none;
+      }
+      .menu-toggle:checked ~ .menu-btn span:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);
+      }
+      .menu-toggle:checked ~ .menu-btn span:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg);
+      }
+
+      .menu-toggle:checked ~ .menu {
+        transform: translateX(0);
+      }
+
+      .menu {
+        z-index: 99;
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 20%;
+        min-height: 100vh;
+        background: #222627;
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+      }
+
+      .menu nav {
+        padding: 43px 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 73px;
+        align-items: start;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      .logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 21px;
+      }
+
+      .logoImg{
+        max-width: 43px;
+        max-height: 43px;
+      }
+
+      .logoImg img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+
+      .logo a{
+        width: 100%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .logoTitle .logoTitle-text{
+        transition: 0.3s ease;
+        font-size: 18px;
+        margin: 0;
+      }
+
+      .logoTitle .logoTitle-text:hover{
+        opacity: 0.5;
+      }
+
+      .menu ul {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+
+      .menu li {
+        transition: 0.5s ease;
+        list-style-type: none;
+        padding: 7px 18px;
+      }
+
+      .active-bg{
+        background-color: #d97642;
+      }
+
+      .menu li:hover{
+        background-color: #d97642;
+      }
+
+      .menu li a {
+        letter-spacing: 2px;
+        font-size: 18px;
+        color: #fff;
+      }
+
+      .menu li a:hover {
+        opacity: 0.6;
+        color: #fff;
+      }
+
+      .header-box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .header-contact{
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        flex-direction: row-reverse;
+      }
+
+      .header-contact a{
+        transition: 0.3s ease;
+        color: #fff;
+      }
+
+      .header-contact a h5{
+        transition: 0.3s ease;
+        color: #fff;
+      }
+
+      .header-contact a h5:hover{
+        transition: 0.3s ease;
+        color: #fff;
+        opacity: 0.5;
+      }
+
+      .background-header{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+
+      .background-header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(static/images/pattern-bg_1600x9000.webp);
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+      }
+
+      .contHeader{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 73px;
+        min-height: 100vh;
+      }
+
+      .contHeader-text{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 43px;
+      }
+
+      .contHeader-text h2{
+        font-weight: 800;
+        color: #fff;
+      }
+
+      .contHeader-img{
+        position: relative;
+        flex: 1;
+      }
+
+      .contHeader-img-border{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 21px;
+        left: 21px;
+        animation-name: border-square;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        border: 4px dashed #d97642b3;
+      }
+
+      .contHeader-img img{
+        animation-name: square-img;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+
+      @keyframes border-square{
+        0% {
+          transform: rotate(0) scale(0);
+          -webkit-transform: rotate(0) scale(0);
+          -moz-transform: rotate(0) scale(0);
+          -ms-transform: rotate(0) scale(0);
+          -o-transform: rotate(0) scale(0);
+        }
+
+        15% {
+          transform: rotate(180deg) scale(1);
+          -webkit-transform: rotate(180deg) scale(1);
+          -moz-transform: rotate(180deg) scale(1);
+          -ms-transform: rotate(180deg) scale(1);
+          -o-transform: rotate(180deg) scale(1);
+        }
+
+        30% {
+          transform: rotate(180deg) scale(1);
+          -webkit-transform: rotate(180deg) scale(1);
+          -moz-transform: rotate(180deg) scale(1);
+          -ms-transform: rotate(180deg) scale(1);
+          -o-transform: rotate(180deg) scale(1);
+        }
+
+        50% {
+          transform: rotate(180deg) scale(1);
+          -webkit-transform: rotate(180deg) scale(1);
+          -moz-transform: rotate(180deg) scale(1);
+          -ms-transform: rotate(180deg) scale(1);
+          -o-transform: rotate(180deg) scale(1);
+        }
+
+        55% {
+          transform: rotate(180deg) scale(1);
+          -webkit-transform: rotate(180deg) scale(1);
+          -moz-transform: rotate(180deg) scale(1);
+          -ms-transform: rotate(180deg) scale(1);
+          -o-transform: rotate(180deg) scale(1);
+        }
+
+        90% {
+          transform: rotate(180deg) scale(1);
+          -webkit-transform: rotate(180deg) scale(1);
+          -moz-transform: rotate(180deg) scale(1);
+          -ms-transform: rotate(180deg) scale(1);
+          -o-transform: rotate(180deg) scale(1);
+        }
+
+        100% {
+          transform: rotate(0) scale(0);
+          -webkit-transform: rotate(0) scale(0);
+          -moz-transform: rotate(0) scale(0);
+          -ms-transform: rotate(0) scale(0);
+          -o-transform: rotate(0) scale(0);
+        }
+      }
+
+      @keyframes square-img{
+        0% {
+          opacity: 0;
+          transform: scale(0);
+          -webkit-transform: scale(0);
+          -moz-transform: scale(0);
+          -ms-transform: scale(0);
+          -o-transform: scale(0);
+        }
+
+        15% {
+          opacity: 1;
+          transform: scale(1);
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -ms-transform: scale(1);
+          -o-transform: scale(1);
+        }
+
+        30% {
+          opacity: 1;
+          transform: scale(1);
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -ms-transform: scale(1);
+          -o-transform: scale(1);
+        }
+
+        50% {
+          opacity: 1;
+          transform: scale(1);
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -ms-transform: scale(1);
+          -o-transform: scale(1);
+        }
+
+        70% {
+          opacity: 1;
+          transform: scale(1);
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -ms-transform: scale(1);
+          -o-transform: scale(1);
+        }
+
+        90% {
+          opacity: 1;
+          transform: scale(1);
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -ms-transform: scale(1);
+          -o-transform: scale(1);
+        }
+
+        100% {
+          opacity: 0;
+          transform: scale(0);
+          -webkit-transform: scale(0);
+          -moz-transform: scale(0);
+          -ms-transform: scale(0);
+          -o-transform: scale(0);
+        }
+
+      }
+
+      .about-us{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-bottom: 43px;
+        border-bottom: 4px dashed #d97642b3;
+        gap: 73px;
+      }
+
+      .about-ua-img{
+        padding: 43px 0;
+        flex: 1.5;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 43px;
+      }
+
+      .about-ua-img h2{
+        border-bottom: 2px dashed #d97642b3;
+        font-weight: 800;
+        letter-spacing: 2px;
+      }
+
+      .about-us-text{
+        display: flex;
+        align-items: center;
+        padding: 21px 43px;
+        flex: 1;
+        background-color: #d97642b3;
+      }
+
+      .about-us-text p{
+        font-weight: 800;
+        letter-spacing: 2px;
+        font-size: 22px;
+        color: #fff;
+      }
+
+      .benefit{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 73px;
+        padding: 43px 0;
+      }
+
+      .benefit-block{
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        gap: 26px;
+        flex-direction: column;
+      }
+
+      .benefit-block h2{
+        font-weight: 800;
+        letter-spacing: 2px;
+      }
+
+      .benefit-box{
+        display: flex;
+        gap: 26px;
+        flex-direction: column;
+      }
+
+      .benefit-card{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 13px;
+        transition: 0.3s ease;
+      }
+
+      .benefit-card svg{
+        transition: 0.3s ease;
+        border: 1px solid #d97642b3;
+        padding: 7px;
+        width: 22px;
+        height: 22px;
+        color: #d97642b3;
+      }
+
+      .benefit-card p{
+        flex: 1;
+        font-size: 18px;
+      }
+
+      .how-work{
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        gap: 26px;
+        flex-direction: column;
+      }
+
+      .how-work h2{
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+
+      .how-work-box{
+        display: flex;
+        gap: 26px;
+        flex-direction: column;
+      }
+
+      .how-work-card{
+        transition: 0.3s ease;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 13px;
+      }
+
+      .how-work-card svg{
+        transition: 0.3s ease;
+        border: 1px solid #d97642b3;
+        padding: 7px;
+        width: 22px;
+        height: 22px;
+        color: #d97642b3;
+      }
+
+      .how-work-card p{
+        flex: 1;
+        font-size: 18px;
+      }
+
+      .how-work-card:hover svg{
+        color: #fff;
+        background-color: #d97642b3;
+      }
+
+      .benefit-card:hover svg{
+        color: #fff;
+        background-color: #d97642b3;
+      }
+
+      .main-content-bg{
+        background-color: #222627;
+        margin: 43px 0;
+      }
+
+      .main-content{
+        display: flex;
+        flex-direction: column;
+        gap: 43px;
+        padding: 43px 0;
+      }
+
+      .main-content h2{
+        color: #fff;
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: 800;
+      }
+
+      .main-block{
+        overflow: hidden;
+        position: relative;
+      }
+
+      .main-block-images {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 13px;
+        border: 4px dashed #d97642b3;
+        float: right;
+        width: 38%;
+        margin: 43px;
+        margin-top: 0;
+        margin-right: 0;
+      }
+
+      .main-block-content {
+        color: #fff;
+        opacity: 0.8;
+        font-size: 16px;
+      }
+
+      .main-block-content ul{
+        list-style: inside;
+      }
+
+      .price-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #fff;
+        gap: 5px;
+        justify-content: flex-start;
+        font-size: 22px;
+        font-weight: 800;
+      }
+
+      .price-title-textBox {
+        color: #fff;
+        margin-right: 7px;
+      }
+
+      .currency-textBox {
+        color: #fff;
+        font-size: 15px;
+      }
+
+      .price-value{
+        color: #fff;
+      }
+
+      .klasWork-box{
+        padding: 43px 0;
+        border-bottom: 4px dashed #d97642b3;
+      }
+
+      .klasWork-box h2{
+        margin-bottom: 43px;
+        letter-spacing: 2px;
+        font-weight: 800;
+        text-align: start;
+      }
+
+      .klasWork-block{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 43px;
+      }
+
+      .klasWork-card{
+        border: 1px dashed #00000033;
+        padding: 21px;
+        box-shadow: 0 8px 50px #23232333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .klasWork-card img{
+        border-radius: 50%;
+        object-fit: cover;
+        max-width: 112px;
+        max-height: 112px;
+      }
+
+      .klasWork-card h4{
+        padding-top: 18px;
+        font-weight: 800;
+        font-size: 22px;
+      }
+
+      .klasWork-card p{
+        color: #000;
+        opacity: 0.5;
+        font-size: 18px;
+      }
+
+      .map-contact{
+        padding-top: 43px;
+      }
+
+      .footer-background{
+        position: relative;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .footer-background::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(static/images/pattern-bg_1600x9001.webp);
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+      }
+
+      .footer{
+        padding: 43px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 43px;
+      }
+
+      .footer-top{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 43px;
+      }
+
+      .footer-top-box{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+      }
+
+      .footer-top-box p{
+        color: #fff;
+        font-size: 18px;
+      }
+
+      .logo-footer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 21px;
+      }
+
+      .logoImg-footer{
+        max-width: 43px;
+        max-height: 43px;
+      }
+
+      .logoImg-footer img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+
+      .logo-footer a{
+        width: 100%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .logoTitle-footer .logoTitle-text-footer{
+        transition: 0.3s ease;
+        font-size: 18px;
+        margin: 0;
+      }
+
+      .logoTitle-footer .logoTitle-text-footer:hover{
+        opacity: 0.5;
+      }
+
+      .osn-form {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+
+      .title-container{
+        margin-bottom: 26px;
+        text-align: center;
+      }
+
+      .title-container h3{
+        font-size: 22px;
+        color: #fff;
+        margin: 0;
+        font-weight: 800;
+      }
+
+      .input-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+      }
+
+      .input-container label{
+        color: #fff;
+      }
+
+      .input-container .input-btn_blocksection, .input-container .textarea-btn_blocksection, .form button {
+        outline: none;
+        margin: 8px 0;
+      }
+
+      .input-container .input-btn_blocksection {
+        color: rgba(255,255,255,0.8);
+        background-color: transparent;
+        padding: 1rem;
+        border: none;
+        border-bottom: 2px solid rgba(255,255,255,0.8);
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+
+      .input-container .textarea-btn_blocksection {
+        color: rgba(255,255,255,0.8);
+        background-color: transparent;
+        padding: 1rem;
+        border: none;
+        border-bottom: 2px solid rgba(255,255,255,0.8);
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        resize: vertical;
+        min-height: 43px;
+        max-height: 139px;
+      }
+
+      .input-container .input-btn_blocksection:focus, .input-container .textarea-btn_blocksection:focus{
+        border-bottom: 2px solid #d97642;
+      }
+
+      .input-container .input-btn_blocksection::placeholder, .input-container .textarea-btn_blocksection::placeholder{
+        color: #fff;
+      }
+
+      .check{
+        color: #fff;
+      }
+
+      .check:hover{
+        opacity: 0.5;
+        color: #fff;
+      }
+
+      .form-check {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        justify-content: flex-start;
+        padding: 13px 0;
+      }
+
+      .form-check .form-check-input{
+        margin: 0;
+      }
+
+      .submit-form {
+        margin: 0 auto !important;
+      }
+
+      .ui-checkbox {
+        --primary-color: #1677ff;
+        --secondary-color: #fff;
+        --primary-hover-color: #4096ff;
+        --checkbox-diameter: 20px;
+        --checkbox-border-radius: 5px;
+        --checkbox-border-color: #d9d9d9;
+        --checkbox-border-width: 1px;
+        --checkbox-border-style: solid;
+        --checkmark-size: 1.2;
+      }
+
+      .ui-checkbox,
+      .ui-checkbox *,
+      .ui-checkbox *::before,
+      .ui-checkbox *::after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      .ui-checkbox {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: var(--checkbox-diameter);
+        height: var(--checkbox-diameter);
+        border-radius: var(--checkbox-border-radius);
+        background: var(--secondary-color);
+        border: var(--checkbox-border-width) var(--checkbox-border-style) var(--checkbox-border-color);
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .ui-checkbox::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) var(--primary-color);
+        box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) var(--primary-color);
+        border-radius: inherit;
+        opacity: 0;
+        -webkit-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+        -o-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+        transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+      }
+
+      .ui-checkbox::before {
+        top: 40%;
+        left: 50%;
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 7px;
+        border-right: 2px solid var(--secondary-color);
+        border-bottom: 2px solid var(--secondary-color);
+        -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+        -ms-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+        transform: translate(-50%, -50%) rotate(45deg) scale(0);
+        opacity: 0;
+        -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+        -o-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+        transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+      }
+
+      .ui-checkbox:hover {
+        border-color: var(--primary-color);
+      }
+
+      .ui-checkbox:checked {
+        background: var(--primary-color);
+        border-color: transparent;
+      }
+
+      .ui-checkbox:checked::before {
+        opacity: 1;
+        -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+        -ms-transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+        transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+        -webkit-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+        -o-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+        transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+      }
+
+      .ui-checkbox:active:not(:checked)::after {
+        -webkit-transition: none;
+        -o-transition: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        transition: none;
+        opacity: 1;
+      }
+
+      .main-foot-blok{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 43px;
+        border-top: 4px dashed #d97642b3;
+        gap: 43px;
+      }
+
+      .main-foot-blok p{
+        color: #fff;
+        font-size: 18px;
+      }
+
+      .contacts-footer{
+        display: flex;
+        border-bottom: 4px dashed #d97642b3;
+        padding-bottom: 43px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 26px;
+      }
+
+      .contacts-footer a h5{
+        transition: 0.3s ease;
+        color: #fff;
+        font-size: 18px;
+      }
+
+      .contacts-footer h5{
+        transition: 0.3s ease;
+        color: #fff;
+        font-size: 18px;
+      }
+
+      .contacts-footer a:nth-child(1), .contacts-footer a:nth-child(2){
+        display: block;
+      }
+
+      .contacts-footer a h5:hover{
+        color: #fff;
+        opacity: 0.5;
+      }
+
+      .privacy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 26px;
+        flex-direction: row-reverse;
+      }
+
+      .privacy a{
+        transition: 0.3s ease;
+        color: #fff;
+        font-size: 18px;
+      }
+
+      .privacy a:hover{
+        color: #fff;
+        opacity: 0.5;
+      }
+
+      .our-service-block{
+        display: flex;
+        justify-content: space-between;
+        gap: 43px;
+        flex-direction: row-reverse;
+        padding: 43px 0;
+        border-bottom: 4px dashed #d97642b3;
+      }
+
+      .our-service{
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        flex: 1;
+      }
+
+      .our-service h2{
+        text-align: center;
+        color: #000;
+      }
+
+      .our-service p{
+        display: none;
+        text-align: center;
+        color: #000;
+        opacity: 0.8;
+      }
+
+      .our-service-box{
+        display: flex;
+        gap: 26px;
+        flex-direction: column;
+      }
+
+      .our-service-card{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        transition: 0.3s ease;
+        gap: 13px;
+      }
+
+      .our-service-card svg{
+        transition: 0.3s ease;
+        border: 1px solid #d97642b3;
+        padding: 7px;
+        width: 22px;
+        height: 22px;
+        color: #d97642b3;
+      }
+
+      .our-service-card h5{
+        font-weight: 700;
+        color: #000;
+        opacity: 0.8;
+        flex: 1;
+      }
+
+      .video{
+        flex: 1;
+      }
+
+      .video video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .our-service-card:hover svg{
+        color: #fff;
+        background-color: #d97642b3;
+      }
+
+      .page-privacy{
+        word-break: break-all;
+        color: #000;
+        overflow: hidden;
+        text-align: justify;
+        padding: 96px 0;
+        width: 100%;
+    }
+
+    .page-privacy a{
+        color: #000;
+    }
+
+    .page-privacy a:hover{
+        color: #000;
+        opacity: 0.5;
+    }
+    .page-privacy li {
+      list-style: circle;
+      margin: 0 18px;
+      padding:  7px 0;
+    }
+    .page-privacy p {
+      padding:  7px 0;
+    }
+
+    ul{
+        list-style: inside;
+    }
+
+    @media (max-width: 575px) {
+        .title-politics{
+            font-size: 21px;
+        }
+      }
+      .but,
+      button {
+        outline: none;
+        border: none;
+        background: inherit;
+        padding: 13px;
+        box-sizing: border-box !important;
+      }
+      .button-1 {
+        background-color: #ea4c89;
+        border-radius: 8px;
+        border-style: none;
+        box-sizing: border-box;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        list-style: none;
+        margin: 0;
+        outline: none;
+        padding: 13px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: color 100ms;
+        vertical-align: baseline;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button-1:hover,
+      .button-1:focus {
+        background-color: #f082ac;
+        color: #fff;
+      }
+
+      .button-2 {
+        font-size: 15px;
+        font-weight: 700;
+        border: 0px;
+        color: white;
+        background-color: #1877f2;
+        padding: 13px 18px;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+
+      .button-2:hover {
+        background-image: linear-gradient(90deg, #a597c4 0%, #acbcff 50%, #aee2ff 75%, #e6fffd 100%);
+        color: black;
+        animation: slide 10s linear infinite;
+      }
+
+      @keyframes slide {
+        100% {
+          background-position: 50rem;
+        }
+      }
+
+      .button-3 {
+        font-size: 15px;
+        --bg: #000;
+        --hover-bg: #e7143f;
+        --hover-text: #000;
+        color: #fff;
+        border: 1px solid var(--bg);
+        border-radius: 4px;
+        padding: 1em 2em;
+        background: lightsalmon;
+        transition: 0.2s;
+      }
+
+      .button-3:hover {
+        color: var(--hover-text);
+        transform: translate(-0.25rem, -0.25rem);
+        background: var(--hover-bg);
+        box-shadow: 0.25rem 0.25rem var(--bg);
+      }
+
+      .button-3:active {
+        transform: translate(0);
+        box-shadow: none;
+      }
+      .button-4 {
+        margin: 13px;
+        padding: 13px 26px;
+        text-align: center;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border-radius: 10px;
+        display: block;
+        border: 0px;
+        font-weight: 700;
+        box-shadow: 0px 0px 14px -7px #f09819;
+        background-image: linear-gradient(45deg, #ff512f 0%, #f09819 51%, #ff512f 100%);
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button-4:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .button-4:active {
+        transform: scale(0.95);
+      }
+      .button-5 {
+        align-items: center;
+        background-color: #0a66c2;
+        border: 0;
+        border-radius: 100px;
+        box-sizing: border-box;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-flex;
+        font-size: 16px;
+        font-weight: 700;
+        justify-content: center;
+        line-height: 20px;
+        max-width: 480px;
+        min-height: 40px;
+        min-width: 0px;
+        overflow: hidden;
+        padding: 0px;
+        padding-left: 18px;
+        padding-right: 18px;
+        text-align: center;
+        touch-action: manipulation;
+        transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+          box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+      }
+
+      .button-5:hover,
+      .button-5:focus {
+        background-color: #16437e;
+        color: #ffffff;
+      }
+
+      .button-5:active {
+        background: #09223b;
+        color: rgb(255, 255, 255, 0.7);
+      }
+
+      .button-5:disabled {
+        cursor: not-allowed;
+        background: rgba(0, 0, 0, 0.08);
+        color: rgba(0, 0, 0, 0.3);
+      }
+
+      .contHeader-button{
+        display: flex;
+        align-items: center;
+        gap: 21px;
+        flex-direction: row-reverse;
+      }
+
+      .contHeader-button a{
+        transition: 0.4s ease;
+        border-bottom: 1px solid #d97642;
+        padding: 7px;
+        color: #d97642;
+      }
+
+      .contHeader-button a:hover{
+        color: #fff;
+        background-color: #d97642;
+      }
+
+      .contHeader-button a:nth-child(2){
+        color: #fff;
+        transition: 0.4s ease;
+        border-bottom: 1px solid #fff;
+        padding: 7px;
+      }
+
+      .contHeader-button a:nth-child(2):hover{
+        color: #000;
+        background-color: #fff;
+      }
+
+
+
+      @media (max-width: 1199px) {
+        .menu{
+          min-width: 40%;
+        }
+      }
+
+      @media (max-width: 991px) {
+        .klasWork-block {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .menu{
+          min-width: 60%;
+        }
+
+        .about-us{
+          align-items: center;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .osn-form {
+          width: 100%;
+        }
+        .menu{
+          min-width: 80%;
+        }
+
+        .about-us-text{
+          padding: 21px;
+        }
+
+        .contHeader{
+          padding: 73px 0;
+          justify-content: center;
+          gap: 26px;
+          flex-direction: column;
+        }
+
+        .background-header{
+          min-height: 100%;
+        }
+
+        .background-header::before{
+          min-height: 100%;
+        }
+
+        .contHeader-text{
+          gap: 26px;
+          align-items: center;
+          text-align: center;
+          flex: none;
+        }
+
+        .contHeader-text h2{
+          font-size: 22px;
+        }
+
+        .contHeader-img{
+          flex: none;
+          width: 80%;
+        }
+
+        .klasWork-block {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .main-block-images{
+          padding: 0;
+          border: none;
+          width: 100%;
+          margin-right: 0;
+        }
+
+        .about-us{
+          flex-direction: column;
+          gap: 0;
+        }
+
+        .benefit{
+          flex-direction: column;
+        }
+
+        .our-service-block{
+          flex-direction: column;
+        }
+
+        .footer-top{
+          flex-direction: column;
+        }
+
+        .footer-top-box{
+          align-items: center;
+          text-align: center;
+        }
+
+        .logo-footer{
+          width: auto;
+        }
+
+        .privacy{
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 575px) {
+        .contacts-footer a:nth-child(1), .contacts-footer a:nth-child(2){
+          display: block;
+        }
+
+        .header-contact{
+          display: none;
+        }
+
+        .menu{
+          min-width: 100%;
+          background-color: #222627e6;
+        }
+
+
+      }
+    </style>
+
+    
+  </head>
+
+  <body>
+
+    
+
+    <div class="header">
+      <div class="content-block">
+        <div class="header-box offertu__tag">
+          <div class="burger-menu">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="menu-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+
+            <div class="menu">
+              <nav>
+                <div class="logo">
+                  <a href="./">
+                    <div class="logoImg"><img src="logo.png" alt="" /></div>
+                    <div class="logoTitle"><h2 class="logoTitle-text">Mugspireauty</h2></div>
+                  </a>
+                </div>
+                <ul>
+                  <li class="active-bg"><a class="menu-link" href="./">Home</a></li>
+                  <li><a class="menu-link" href="./#aboutus-id">About us</a></li>
+                  <li><a class="menu-link" href="./#service-id">Our Services</a></li>
+                  
+                </ul>
+                
+              </nav>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="background-header">
+      <div class="content-block">
+        <div class="contHeader">
+          <div class="contHeader-text">
+            <h2>Welcome to Mugspireauty, your ultimate destination for premium coffee and tea experiences. Discover rich flavors, expert brewing tips, and personalized services designed to elevate your daily moments with every cup. Join us and indulge in the art of perfect coffee and tea.</h2>
+            
+            <div class="contHeader-button">
+              <a href="./#main-stats-id">Read More</a>
+              
+            </div>
+          </div>
+          <div class="contHeader-img">
+            <div class="contHeader-img-border"></div>
+            <img src="static/images/main_ZJro0.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+
+    <div class="content-block">
+      <div class="benefit" id="benefit-id">
+        <div class="benefit-block">
+          <h2>Our Advantages</h2>
+          <div class="benefit-box">
+            <div class="benefit-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-boxes"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z"
+                />
+              </svg>
+              <p>Expertise and Passion Our team combines deep knowledge and love for coffee and tea to provide you with the best recommendations and services.</p>
+            </div>
+            <div class="benefit-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-back"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"
+                />
+              </svg>
+              <p>Quality Assurance We source only premium beans and leaves, ensuring every product meets high standards for taste and freshness.</p>
+            </div>
+            <div class="benefit-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-command"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.5 2A1.5 1.5 0 0 1 5 3.5V5H3.5a1.5 1.5 0 1 1 0-3M6 5V3.5A2.5 2.5 0 1 0 3.5 6H5v4H3.5A2.5 2.5 0 1 0 6 12.5V11h4v1.5a2.5 2.5 0 1 0 2.5-2.5H11V6h1.5A2.5 2.5 0 1 0 10 3.5V5zm4 1v4H6V6zm1-1V3.5A1.5 1.5 0 1 1 12.5 5zm0 6h1.5a1.5 1.5 0 1 1-1.5 1.5zm-6 0v1.5A1.5 1.5 0 1 1 3.5 11z"
+                />
+              </svg>
+              <p>Personalized Experience Services and products tailored to your individual preferences, making every cup uniquely yours.</p>
+            </div>
+          </div>
+          <img src="static/images/main_ZJro1.webp" alt="" />
+        </div>
+        <div class="how-work">
+          <h2>Secrets of the perfect cup: how we create taste.</h2>
+          <img src="static/images/main_ZJro2.webp" alt="" />
+          <div class="how-work-box">
+            <div class="how-work-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-calendar"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+                />
+              </svg>
+              <p>Consultation to understand your preferences and needs.</p>
+            </div>
+            <div class="how-work-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-diagram-3"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"
+                />
+              </svg>
+              <p>Selection of the finest coffee beans and tea leaves.</p>
+            </div>
+            <div class="how-work-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-gem"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z"
+                />
+              </svg>
+              <p>Customization of blends or services based on your taste.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="main-content-bg">
+      <div class="content-block">
+        <div class="main-content" id="main-stats-id">
+          <h2>Coffee and tea delivery to your home or office – your favorite flavors are close at hand</h2>
+          <div class="main-block">
+            <img class="main-block-images" src="uploads/04-08-2026/coffee-2026-08-10-2.jpg" alt="Coffee and tea delivery to your home or office – your favorite flavors are close at hand" />
+            <div class="main-block-content"><p>Sometimes all it takes to have a great day is a little something— <strong>a cup of aromatic coffee or freshly brewed tea</strong> . That same taste that wakes you up in the morning, makes a work break more enjoyable, or turns an ordinary evening into a small, cozy ritual.</p><p> Our café offers <strong>coffee and tea delivery to your home or office</strong>, so your favorite drinks are always within reach. No more planning, finding time to travel, or putting off your purchase. Just choose your favorite, place your order, and we'll take care of the rest.</p><h2> ☕ Your favorite coffee - wherever it's convenient for you</h2><p> Every coffee lover has their own preferences. Some appreciate a rich, distinctive flavor and vibrant aroma, others prefer softer, more delicate nuances, and for others, a cup of coffee is a true daily ritual, impossible to imagine a morning without.</p><p> We want to keep this ritual pleasant and simple.</p><p> That's why you can order coffee delivered <strong>directly to your home or office</strong> . It's a convenient way to replenish your favorite coffee supply and avoid discovering one morning that your coveted container is unexpectedly empty.</p><p> Order coffee for yourself, your family, colleagues, or guests. Let the aroma always be a mood-lifting scent at home, and at the office, a chance to take a short break, unwind from work, and recharge for new ideas.</p><h2> 🍵 Tea for cozy moments</h2><p> There is a mood that is better suited to tea than coffee.</p><p> A hot cup of tea is especially good on a cool morning, during a leisurely conversation, after a busy day at work, or just when you want to stop and rest a bit.</p><p> We offer <strong>tea delivery to your home or office</strong>, so your favorite varieties are always close by.</p><p> Tea can be invigorating and rich, light and refreshing, delicate, aromatic, or warming. Choose the option that suits your mood and create your own little traditions: morning tea before starting the day, a cup while working, evening tea with loved ones, or a beautiful tea table for guests.</p><p> And we will deliver your order to the place most convenient for you to receive it.</p><h2> 🏠 Coffee and tea delivery to your home</h2><p> Home is a place where comfort and coziness are especially valued. And sometimes you just don't want to leave the house just because you're out of coffee or your favorite tea.</p><p> In such situations, delivery becomes an excellent solution.</p><p> You can easily select the items you need, place your order, and receive it without changing your plans. This is especially convenient when you want to stock up on supplies and be sure that everything you need for your favorite drink is already waiting in the kitchen.</p><p> <strong>Coffee and tea delivered to your home</strong> is also a wonderful way to take care of your loved ones. Order a few options for the whole family, prepare for guests, or simply treat yourself to something new.</p><p> Sometimes comfort truly does start with the little things. With a favorite mug. With a pleasant aroma. With a few quiet minutes that belong only to you.</p><h2> 💼 Coffee and tea delivery to the office</h2><p> Good coffee and tea have long become a part of office life.</p><p> Morning coffee helps you get into the work rhythm. Tea accompanies meetings and negotiations. And a short break with your favorite beverage allows you to switch off, chat with colleagues, and return to your tasks with renewed energy.</p><p> That's why our cafe offers <strong>coffee and tea delivery directly to the office</strong> .</p><p> This is convenient for both small teams and companies that need to regularly maintain a supply of drinks for employees and guests.</p><p> No need to delegate a coffee run or remember to stock up at the last minute. Simply select the required quantity and arrange delivery.</p><p> This way, the office will always have something that helps make the workday a little more enjoyable.</p><p> Coffee for a productive morning. Tea for a quiet meeting. A favorite drink during a break. Simple things that create a comfortable atmosphere and make the workspace more inviting.</p><h2> ✨ Why delivery is convenient</h2><p> We understand how valuable time has become these days. That's why we strive to make purchasing coffee and tea as easy as possible.</p><p> <strong>You choose - we deliver.</strong></p><p> You don't have to change plans, waste time on travel, or reschedule other appointments. Your order arrives wherever you are: at home or work.</p><p> Delivery is especially convenient if you:</p><ul><li> You regularly drink coffee or tea and want to replenish your supplies in advance;</li><li> order drinks for employees;</li><li> preparing for a meeting, holiday or the arrival of guests;</li><li> want to try something new;</li><li> prefer to receive your favorite products without unnecessary travel;</li><li> value your time and comfort.</li></ul><p> Just one order, and aromatic coffee or your favorite tea is on its way to you.</p><h2> 🎁 Coffee and tea are a nice gift</h2><p> By the way, delivery can be useful not only for your own purchases.</p><p> A good coffee or tea is <strong>a universal and warm token of appreciation</strong> . Such a gift can be given to a loved one, friend, colleague, or business partner.</p><p> Sometimes you don't need a special reason to make someone happy.</p><p> You can send aromatic coffee to someone with a busy work week ahead. Treat your loved ones to their favorite tea. Surprise a friend. Or choose a beautiful gift for your colleagues.</p><p> After all, a gift that can be brewed, smelled, and shared with someone else is always a little more than just a thing.</p><p> This is the mood.</p><h2> 🌿 Create your own coffee and tea rituals</h2><p> We love coffee and tea not only for their taste.</p><p> We love the atmosphere they create.</p><p> The aroma of fresh coffee in the morning. A warm mug in your hands. A teapot on the table during a long conversation. Five minutes of silence in the middle of a busy workday. A meeting of friends that begins with the words, "Would you like coffee or tea?"</p><p> Everyday life is made up of moments like these.</p><p> And we want to make sure that you always have everything you need for these little rituals.</p><h2> 🚚 Order coffee and tea with delivery</h2><p> Choose your favorite flavors, discover new combinations, and don't worry about running out unexpectedly.</p><p> <strong>Our cafe will deliver coffee and tea right to your door – home or office.</strong></p><p> For cozy evenings at home and energetic work mornings. For important negotiations and friendly gatherings. For large groups and for one special cup in silence.</p><p> All that's left for you to do is choose the drink, brew it, and enjoy the moment.</p><p> <strong>☕ Coffee for a cheerful start.<br> 🍵 Tea for a cozy continuation.<br> 🚚 Delivery - for your convenience.</strong></p><p> Order your favorite coffee and tea delivered to your home or office—and let good taste always be close at hand.</p></div>
+          </div>
+           
+        </div>
+      </div>
+    </div>
+    <div class="content-block">
+      <div class="about-us shopqr--link" id="aboutus-id">
+        <div class="about-ua-img">
+          <h2>About us</h2>
+          <img src="static/images/main_ZJro3.webp" alt="" />
+        </div>
+        <div class="about-us-text">
+          <p>At Mugspireauty, we are passionate about bringing the finest coffee and tea to enthusiasts and casual drinkers alike. Our mission is to inspire and educate through exceptional products and expert guidance, ensuring every cup you enjoy is a moment of delight. With a commitment to quality, sustainability, and customer satisfaction, we carefully select our beans and leaves from trusted sources worldwide. Our team of specialists is dedicated to sharing knowledge, offering personalized services, and creating unique experiences that celebrate the culture and craft of coffee and tea. Whether you are looking for brewing advice, premium products, or tailored services, Mugspireauty is here to support your journey from bean to brew.</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="content-block">
+      <div class="klasWork-box" id="worker-id">
+        <h2>Our People</h2>
+        <div class="klasWork-block">
+          <div class="klasWork-card">
+            <img src="static/images/profile_2026-08-16_05-12-10_0.webp" alt="" />
+            <h4>James Carter</h4>
+            <p>Barista</p>
+          </div>
+          <div class="klasWork-card">
+            <img src="static/images/thumb_YxE5x_0.webp" alt="" />
+            <h4>Emily Sanders</h4>
+            <p>Tea Sommelier</p>
+          </div>
+          <div class="klasWork-card">
+            <img src="static/images/profile_2026-08-16_05-12-10_1.webp" alt="" />
+            <h4>Michael Bennett</h4>
+            <p>Coffee Roaster</p>
+          </div>
+          <div class="klasWork-card">
+            <img src="static/images/thumb_YxE5x_1.webp" alt="" />
+            <h4>Sarah Hughes</h4>
+            <p>Quality Control Specialist</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="content-block">
+      <div class="our-service-block" id="service-id">
+        <div class="our-service">
+          <h2>Our Services</h2>
+          <p>Experience the art of coffee and tea like never before with our expert-led services.</p>
+          <div class="our-service-box">
+            <div class="our-service-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-globe"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"
+                />
+              </svg>
+              <h5>Custom Coffee Blends Create your signature coffee blend with our expert guidance, tailored to your taste preferences and brewing methods for a unique and satisfying experience.</h5>
+            </div>
+            <div class="our-service-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-graph-up-arrow"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+              <h5>Tea Tasting Sessions Explore a variety of premium teas through guided tasting sessions designed to enhance your appreciation for aroma, flavor, and origin.</h5>
+            </div>
+            <div class="our-service-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-headset"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"
+                />
+              </svg>
+              <h5>Barista Training Learn professional coffee brewing techniques from certified trainers to perfect your skills and impress with every cup you serve.</h5>
+            </div>
+            <div class="our-service-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-hurricane"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.999 2.6A5.5 5.5 0 0 1 15 7.5a.5.5 0 0 0 1 0 6.5 6.5 0 1 0-13 0 5 5 0 0 0 6.001 4.9A5.5 5.5 0 0 1 1 7.5a.5.5 0 0 0-1 0 6.5 6.5 0 1 0 13 0 5 5 0 0 0-6.001-4.9M10 7.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0"
+                />
+              </svg>
+              <h5>Subscription Service Enjoy a curated selection of fresh coffee and tea delivered to your door monthly, keeping your pantry stocked with the best flavors.</h5>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <video autoplay muted loop playsinline>
+            <source src="static/images/main-video_1920x10800.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+     
+    
+    
+
+    <div class="footer-background banner--carouselxy">
+      <div class="content-block">
+        <div class="footer">
+          <div class="footer-top">
+            <div class="footer-top-box">
+              <div class="logo-footer">
+                <a href="./">
+                  <div class="logoImg-footer"><img src="logo.png" alt="" /></div>
+                  <div class="logoTitle-footer">
+                    <h2 class="logoTitle-text-footer">Mugspireauty</h2>
+                  </div>
+                </a>
+              </div>
+              <p>Join Mugspireauty today and transform your daily brew into a moment of inspiration.</p>
+            </div>
+            
+          </div>
+          <div class="main-foot-blok">
+            
+            <p>&#169; 2026 Mugspireauty</p>
+            <div class="privacy">
+              <a href="privacyPolicy.html">Privacy policy</a>
+              <a href="terms.html">Terms & Conditions</a>
+              <a href="legal-disclaimer.html">Disclaimer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+ 
+ 
+  </body>
+</html>
+
